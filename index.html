@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Autism Spectrum Awareness </title> 
+<link rel = "stylesheet" href=style.css>
+<link rel="icon" href="favicon.jpg" type="image/x-icon">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+ <div class= "hcontainer">
+
+  <h1>
+    Autism Spectrum
+  </h1>
+
+  <h2>
+    It is important to be aware
+  </h2>
+
+  <a class="btn" href="findout.html">
+    Find Out
+  </a>
+
+ </div>
+</header>
+    
+<section class="features">
+ <div class="container" class="index-container">
+
+    <div class="feature">
+    <a href="signs.html">
+    <img src="feature1.png" alt="icon">
+    <p>Signs</p>
+    </a>
+    </div>
+
+    <div class="feature">
+    <a href="statistics.html">
+    <img src="feature2.png" alt="icon">
+    <p>Statistics</p> 
+    </a>
+    </div>
+
+    <div class="feature">
+    <a href="causes.html">
+    <img src="feature3.png" alt="icon">
+    <p>Causes</p>  
+    </a>
+    </div>
+
+ </div>
+</section>
+
+<section class="quote">
+
+ <blockquote class="container">
+ <p> <span id="quote">“Life is too short to stress the small things anymore.” </span></p>
+ <cite><span id="person">Daryl Hannah – Famous Actress – ‘Splash’, ‘Bladerunner’ </span></cite>
+ </blockquote>
+
+</section>
+
+<footer>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About</a></li>
+ <li><a href="contacts.html">Contacts</a></li>
+ </ul>
+ <p>&copy; All rights reserved.</p>
+</footer>
+
+<script type="text/javascript">
+ let quotes = [
+ "“Everyone has a mountain to climb and autism has not been my mountain, it has been my opportunity for victory.”",
+
+ "“There are enough people in the world who are going to write you off. You don’t need to do that to yourself.”",
+
+ "“Do the best you can and never stop”",
+
+ "“Anything Is possible! If I can do it, so can you!”",
+
+ "“I got doubted when I was a kid. ‘You’re never going to meet the Dalai Lama and you’re never going to do this or that. That’s the exact kind of thing I don’t appreciate in people.”",
+
+ "“I used to think, when I was first diagnosed with Asperger’s Syndrome – a form of autism, about what I can’t do, rather than what I can do, which was a mistake in thinking.”",
+ ]
+
+ q=0;
+
+ setInterval(function(){
+ $('#quote').fadeOut(function(){
+ $(this).html(quotes[(q=(q+1)%quotes.length)]).fadeIn();});}, 5000);
+</script>
+ 
+<script type="text/javascript">
+ let people = [
+ "Rachel Barcellona – Pageant Professional – Autism Spectrum Award Winner 2017 – Advisory Board Member",
+
+ "Susan Boyle – Famous Singer – ‘I Dreamed a Dream’, ‘Wild Horses’ ",
+
+ "Stephen Wiltshire – Famous Landscape Sketch Artist",
+
+ "Dani Bowman – Head of DaniMation Studios – an Animation Company",
+
+ "Xavier DeGroat – Head, Xavier DeGroat Autism Foundation",
+
+ "Merrick Egber – Administrative Assistant, Els for Autism Foundation – Chair of the Advisory Board",
+ ]
+ 
+ p=0;
+ setInterval(function(){
+ $('#person').fadeOut(function(){
+ $(this).html(people[(p=(p+1)%people.length)]).fadeIn();});},5000);
+</script>
+
+</body>
+
+</html>
